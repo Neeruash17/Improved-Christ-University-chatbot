@@ -1,17 +1,26 @@
-Improved Christ University Chatbot 🤖🎓
-An AI-powered, domain-restricted conversational assistant designed to provide detailed, accurate, and context-aware information specifically about Christ University. This chatbot leverages the GPT-4o-mini Large Language Model via the OpenRouter API, combining advanced prompt engineering with a user-friendly interactive interface built using Python's ipywidgets.
- Features
-- Domain-specific AI chatbot focused on Christ University queries.
-- Uses GPT-4o-mini LLM accessed via OpenRouter API.
-- Multi-turn conversational memory.
-- Interactive UI with suggestive questions and thinking animations.
-- Grounded responses linked to official Christ University resources.
-- Polite refusal of off-topic questions.
-- Ethical disclaimer for AI-generated content.
+# ICUB — Improvised Christ University ChatBot
 
-License
-MIT License
+This repository contains the "ICUB Improvised Christ University ChatBot" Jupyter notebook and supporting files.
 
-Disclaimer
+What's included
+- A sanitized Jupyter notebook: ICUB_Improvised_Christ_University_ChatBot_.ipynb
+- requirements.txt — Python dependencies
+- LICENSE — MIT
+- .gitignore — common ignores
 
-AI-generated responses may occasionally be inaccurate. Please verify important info with official Christ Univ
+Quick start
+1. Clone the repository.
+2. Create a virtual environment:
+   - python -m venv .venv
+   - source .venv/bin/activate  (Linux/macOS) or .venv\Scripts\activate (Windows)
+3. Install dependencies:
+   - pip install -r requirements.txt
+4. Set your API key securely:
+   - Export env var OPENROUTER_API_KEY or OPENAI_API_KEY
+   - Do NOT hardcode API keys in the notebook.
+5. Open the notebook in Jupyter / Colab and run cells.
+
+Security note
+- The notebook originally contained a hard-coded key. It has been removed and replaced with code that reads from environment variables. Do not commit real keys.
+
+Author: Neeraj Ashish Goli
